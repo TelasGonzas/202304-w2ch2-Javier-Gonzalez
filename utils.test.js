@@ -41,4 +41,14 @@ describe("Create a strictEquals function", () => {
       expect(expectedValue).toBe(expectedResult);
     });
   });
+  describe("When it receive two values (1,'1')", () => {
+    test("It should return true", () => {
+      const valueA = 1;
+      const valueB = "1";
+      const expectedValue = strictEquals(valueA, valueB);
+      const expectedResult = false;
+
+      expect(expectedValue).toBe(expectedResult);
+    });
+  });
 });
