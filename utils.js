@@ -1,3 +1,4 @@
+
 export const strictEquals = (valueA, valueB) => {
   if (Object.is(valueA, NaN) || Object.is(valueB, NaN)) {
     return false;
@@ -12,3 +13,4 @@ export const strictEquals = (valueA, valueB) => {
   }
   return Object.is(valueA, valueB);
 };
+
