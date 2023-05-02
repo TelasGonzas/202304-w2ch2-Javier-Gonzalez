@@ -12,7 +12,7 @@ describe("Create a strictEquals function", () => {
     });
   });
   describe("When it receive two values (NaN,NaN)", () => {
-    test("It should return true", () => {
+    test("It should return false", () => {
       const valueA = NaN;
       const valueB = NaN;
       const expectedValue = strictEquals(valueA, valueB);
@@ -42,7 +42,7 @@ describe("Create a strictEquals function", () => {
     });
   });
   describe("When it receive two values (1,'1')", () => {
-    test("It should return true", () => {
+    test("It should return false", () => {
       const valueA = 1;
       const valueB = "1";
       const expectedValue = strictEquals(valueA, valueB);
@@ -52,7 +52,7 @@ describe("Create a strictEquals function", () => {
     });
   });
   describe("When it receive two values (true,false)", () => {
-    test("It should return true", () => {
+    test("It should return false", () => {
       const valueA = true;
       const valueB = false;
       const expectedValue = strictEquals(valueA, valueB);
@@ -72,7 +72,7 @@ describe("Create a strictEquals function", () => {
     });
   });
   describe("When it receive two values ('water','oil')", () => {
-    test("It should return true", () => {
+    test("It should return false", () => {
       const valueA = "water";
       const valueB = "oil";
       const expectedValue = strictEquals(valueA, valueB);
